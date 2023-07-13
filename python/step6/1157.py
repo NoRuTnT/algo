@@ -1,10 +1,10 @@
 word = input().lower()
 lst = list(set(word))
-countlist = []
+count_list = []
 for i in lst:
-    countlist.append(word.count(i))
-if countlist.count(max(countlist)) > 1:
+    count_list.append(word.count(i))
+if count_list.count(max(count_list)) >= 2:
     print("?")
 else:
-    a = countlist.index(max(countlist))
-    print(word[a].upper())
+    a = count_list.index(max(count_list))
+    print(lst[a].upper())
